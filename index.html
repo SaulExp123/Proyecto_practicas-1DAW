@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Habilidades Empresa</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Habilidades útiles para mi Empresa</h1>
+
+        <div class="skills">
+            <h2>Habilidades Blandas Útiles</h2>
+            <ul>
+                <li>Comunicación Efectiva</li>
+                <li>Trabajo en Equipo</li>
+                <li>Resolución de Problemas</li>
+                <li>Adaptabilidad</li>
+                <li>Gestión del Tiempo</li>
+                <li>Creatividad</li>
+                <li>Pensamiento Crítico</li>
+            </ul>
+        </div>
+
+        <div class="dafo-analysis">
+            <h2>Análisis DAFO</h2>
+            <div class="dafo-container">
+                <div class="dafo-item debilidades">
+                    <h3>Debilidades</h3>
+                    <p>Las debilidades de mi empresa son los idiomas ya que no dominan muchos de ellos en alto nivel.</p>
+                </div>
+                <div class="dafo-item amenazas">
+                    <h3>Amenazas</h3>
+                    <p>Creo que las amenazas para mi empresa pueden ser los proyectos con poca documentacion o documentacion débil.</p>
+                </div>
+                <div class="dafo-item fortalezas">
+                    <h3>Fortalezas</h3>
+                    <p>La mayor fortaleza de la empresa es su gran equipo formado por pocas personas pero muy eficientes.</p>
+                </div>
+                <div class="dafo-item oportunidades">
+                    <h3>Oportunidades</h3>
+                    <p>Las oportunidades de la empresa son las que le ayudan a expandirse hacia grandes clientes e inlcuso si es posible internacionalizarse. </p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="horarios">
+            <h2>Horarios Semanales de Trabajadores</h2>
+          
+            <label for="seleccionarTrabajador">Seleccionar Trabajador:</label>
+            <select id="seleccionarTrabajador">
+            </select>
+          
+            <table id="tablaHorarios">
+              <thead>
+                <tr>
+                  <th>Día</th>
+                  <th>Lunes</th>
+                  <th>Martes</th>
+                  <th>Miércoles</th>
+                  <th>Jueves</th>
+                  <th>Viernes</th>
+                  <th>Total Horas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="entradaRow">
+                  <td>Hora Entrada</td>
+                  <td><input type="time" id="entradaLunes" /></td>
+                  <td><input type="time" id="entradaMartes" /></td>
+                  <td><input type="time" id="entradaMiercoles" /></td>
+                  <td><input type="time" id="entradaJueves" /></td>
+                  <td><input type="time" id="entradaViernes" /></td>
+                  <td></td>
+                </tr>
+                <tr id="salidaRow">
+                  <td>Hora Salida</td>
+                  <td><input type="time" id="salidaLunes" /></td>
+                  <td><input type="time" id="salidaMartes" /></td>
+                  <td><input type="time" id="salidaMiercoles" /></td>
+                  <td><input type="time" id="salidaJueves" /></td>
+                  <td><input type="time" id="salidaViernes" /></td>
+                  <td></td>
+                </tr>
+                <tr id="horasRow">
+                  <td>Horas conmutadas</td>
+                  <td id="horasLunes">0.0</td>
+                  <td id="horasMartes">0.0</td>
+                  <td id="horasMiercoles">0.0</td>
+                  <td id="horasJueves">0.0</td>
+                  <td id="horasViernes">0.0</td>
+                  <td id="horaTotal">0.0</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        
+    
+       
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
